@@ -1,0 +1,456 @@
+*{
+    padding:0;
+     margin:0; 
+     box-sizing: border-box;
+}
+#home{
+    width:100%;
+    height: 100vh;
+    background:url(../images/girlpic.png),url(../images/background1.jpeg);
+    background-size: 50% 100%, cover;
+    background-position: right,center;
+    background-repeat: no-repeat,no-repeat;
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+.logo{
+    color:white;
+    font-size: 50px;
+    padding-left: 100px;
+    letter-spacing: 5px;
+}
+.menu{
+    margin-right: 80px;
+    margin-bottom: 20px;
+   
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo span{
+    color: #e74c3c;
+
+}
+.menu a:hover{
+    background:#e74c3c;
+    transition: 0.5;
+}
+.text{
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+    max-width: 450px;
+}
+.text h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
+.text p{
+    font-size: 25px;
+}
+.c-btn{
+   border: none;
+   outline: none;
+   color: white;
+   background: #e74c3c;
+   padding: 10px;
+   margin-top: 20px;
+}
+#about{
+    padding: 100px 50px;
+
+}
+.section-info{
+    font-weight: bold;
+    text-align: center;
+
+}
+.section-info h1{
+    font-size: 50px;
+}
+.section-info p{
+    font-size: 25px;
+    color: #e74c3c;
+}
+.about-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../images/aboutbackround.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.about-left-col{
+    flex-basis: 50%;
+
+}
+.about-left-col img{
+ 
+   padding-left: 200px;
+   padding-bottom: 150px;
+   padding-top: 50px;
+  
+
+}
+.about-right-col{
+    flex-basis: 50%;
+
+}
+#p-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.about-right-col p{
+font-size: 20px;
+text-align:justify;
+color: white; 
+padding-right: 20px; 
+ margin-top: 20px; 
+   
+}
+
+#cursor2{
+    cursor: pointer;
+}
+
+#skills{
+    padding: 100px 50px;
+    background-image: url(../images/background2.jpg);
+    background-size: cover;
+    color: white;
+}
+.skills-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    background: rgb(45,52,54);
+
+}
+.skills-left-col{
+    flex-basis: 50%;
+    text-align: justify;
+}
+.skills-left-col p{
+    font-size: 20px;
+}
+.skills-right-col{
+    flex-basis: 50%;
+}
+progress{
+    width:80%;
+
+}
+.progress-div{
+    width:70%;
+    margin: auto;
+}
+.progress-div p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 80px;
+    text-align: justify;
+}
+
+#services{
+    padding: 100px 50px;
+
+}
+.services-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.services-box {
+    flex-basis: 25%;
+    text-align: center;
+    box-shadow: 2px 3px 5px grey;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 0 50px;
+    margin-bottom: 50px;
+
+}
+.services-box:hover{
+    background: #e74c3c;
+    color: white;
+    transition: 0.4s;
+}
+.services-box img{
+    width:60%;
+
+}
+.cursor:hover{
+    background-color: rgb(23, 192, 192);
+    cursor: pointer;
+}
+#contact{
+    padding: 100px 50px;
+    background:linear-gradient(160deg,#e74c3c 45%,white 0%);
+}
+.contact-row{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col{
+    flex-basis: 50%;
+}
+
+.contact-right-col{
+    flex-basis: 50%;
+}
+.contact-right-col form{
+  text-align: center;
+  
+}
+
+.contact-right-col h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 250px;
+    font-size: 35px
+}
+
+.contact-right-col form input{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-right-col form textarea{
+    width: 60%;
+    padding: 10px;
+}
+.contact-right-col p{
+    text-align: left;
+    margin-left: 250px;
+    font-size: 20px;
+}
+#footer{
+    background:#e74c3c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+ 
+ 
+}
+@media only screen and (max-width:770px){
+    #home{
+        background:url(../images/background1.jpeg);
+        background-size: cover;
+    }
+    .menu a{display: none}
+    .logo{
+        padding-left:50px ;
+
+    }
+    .text{
+        margin-left: 50px;
+    }
+    .about-left-col{
+        flex-basis: 100%;
+    
+    }
+    .about-left-col img{
+     
+       padding-left: 130px;
+       padding-bottom: 50px;
+       padding-top: 50px;
+      
+    
+    }
+    .about-right-col{
+        flex-basis: 100%;
+    
+    }
+   
+    #p-title{
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+        padding:0 30px
+    }
+    .about-right-col p{
+    font-size: 15px;
+    text-align:justify;
+    color: white;
+     padding:0 30px;  
+   
+     
+    }
+ 
+    #cursor2{
+        cursor: pointer;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    
+    .skills-left-col{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    
+    }
+       
+    .skills-right-col{
+        flex-basis: 100%;
+    
+    }
+    .progress-div{
+        width:80%;
+        margin: auto;
+    }
+    .progress-div p{
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding-left: 20px;
+        text-align: justify;
+    }
+    .services-box{
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+    .services-box img{
+        width:60%;
+    
+    }
+    .contact-right-col h2{
+        margin-left: 100px;
+    }
+
+    .contact-right-col p{
+      margin-left: 100px;
+    }
+}
+
+/*----------------- other-serevices----------------*/
+
+#nav{
+    background-image: url(../images/background1.jpeg);
+}
+.sub-header{
+    height: 90vh;
+    background-image: url(../images/mehendi-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.col-5 h2{
+margin-top: 150px;
+font-size: 50px;
+font-weight: bold;
+margin-left:  20px;
+margin-right: 20px;
+text-align: center;
+}
+.col-5 p{
+font-size: 20px;
+margin-top: 20px;
+margin-left:  20px;
+margin-right: 20px;
+text-align: center;
+}
+.col-7{
+   height: 60vh;
+}
+
+
+
+
+
+
+
+/*--------   portfolio  ---*/
+
+.portfolio-container{
+    padding: 100px 50px;
+}
+.portfolio-row{
+ display: inline-block;
+ margin: 50px;
+ padding-left: 20px;
+ 
+}
+
+
+.thecard{
+   
+}
+
+
+.theback a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+.portfolio-row{
+    position: relative;
+  
+    width: 300px;
+    height: 300px;
+  
+}
+.thecard{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition:  all 0.6s ease;
+    transform-style: preserve-3d;
+  
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.thefront{
+    position: absolute;
+    width: 100%;
+    height:100%;
+   background: turquoise;
+    backface-visibility:hidden;
+    color: teal;
+}
+
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height:100%;
+background: #2980b9;
+    backface-visibility:hidden;
+    color: teal;
+
+    transform: rotateY(180deg);
+}
+.thefront img{
+    width:100%;
+    height:100%
+}
